@@ -14,7 +14,8 @@
 *.cdb
 *.hdb
 *.quiproj.*
-./db
+./Computer/db
+*.qsf
 # ignore simulation output of ModelSim
 wlf*
 *.wlf
