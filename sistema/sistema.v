@@ -3,14 +3,11 @@ module sistema
 	input clock,
 	input button_in,
 	input [17:0] switches,
-	/*output [6:0] HEX7,
-	output [6:0] HEX6,
-	output [6:0] HEX5,
-	output [6:0] HEX4,
+	output wire [6:0] HEX5,
+	output wire [6:0] HEX4,
 	output wire [6:0] HEX3,
 	output wire [6:0] HEX2,
-	output wire [6:0] HEX1,*/
-	output wire [6:0] HEX0
+	output wire [6:0] HEX1
 	//output [3:0] LEDG
 );
 	

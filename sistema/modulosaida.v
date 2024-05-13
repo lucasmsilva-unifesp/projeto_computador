@@ -1,6 +1,5 @@
-module modulosaida (entrada, controleOUT, saida5, saida4, saida3, saida2, saida1);
+module modulosaida (entrada, saida1, saida2, saida3, saida4, saida5);
 
-	input controleOUT;
 	input [31:0] entrada;
 	output [6:0] saida1, saida2, saida3, saida4, saida5;
 	reg [31:0] n1,  n2, n3, n4, n5;
@@ -40,9 +39,9 @@ always @(*) begin
 end
 
 displayss display1(n1[3:0], saida1);
-displayss display2(n1[3:0], saida2);
-displayss display3(n1[3:0], saida3);
-displayss display4(n1[3:0], saida4);
-displayss display5(n1[3:0], saida5);
+displayss display2(n2[3:0], saida2);
+displayss display3(n3[3:0], saida3);
+displayss display4(n4[3:0], saida4);
+displayss display5(n5[3:0], saida5);
 
 endmodule
