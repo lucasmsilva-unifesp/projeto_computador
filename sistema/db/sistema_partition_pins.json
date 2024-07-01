@@ -144,7 +144,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[17]",
+					"name" : "LEDG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[3]",
 					"strict" : false
 				},
 				{
@@ -153,22 +165,6 @@
 				},
 				{
 					"name" : "switches[15]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[14]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[13]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[12]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[11]",
 					"strict" : false
 				},
 				{
@@ -193,6 +189,26 @@
 				},
 				{
 					"name" : "switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[14]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[13]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[12]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[11]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[17]",
 					"strict" : false
 				},
 				{

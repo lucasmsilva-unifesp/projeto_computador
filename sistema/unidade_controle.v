@@ -419,7 +419,7 @@ module unidade_controle
 				OpULA<=4'b0000;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
-				EscreveReg<=1'b0;
+				EscreveReg<=1'b1;
 				OpShamt<=1'b0;
 				OpMov<=1'b0;
 				RegLei2<=1'b0;
