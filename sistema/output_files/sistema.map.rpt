@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sistema
-Mon Jul 01 17:14:20 2024
+Sun Jul 14 20:47:08 2024
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,35 +14,38 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Registers Packed Into Inferred Megafunctions
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0|altsyncram_8j61:auto_generated
- 14. Parameter Settings for User Entity Instance: divisor_frequencia:div_freq
- 15. Parameter Settings for User Entity Instance: cpu:CPU|endereco:endereco
- 16. Parameter Settings for User Entity Instance: cpu:CPU|rom:ROM
- 17. Parameter Settings for User Entity Instance: cpu:CPU|ram:RAM
- 18. Parameter Settings for Inferred Entity Instance: cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0
- 19. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div3
- 20. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod4
- 21. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div2
- 22. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod3
- 23. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div1
- 24. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod2
- 25. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div0
- 26. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod1
- 27. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod0
- 28. altsyncram Parameter Settings by Entity Instance
- 29. Port Connectivity Checks: "modulosaida:ModuloSaida"
- 30. Port Connectivity Checks: "cpu:CPU|multiplexador4:mux_BR_escrita"
- 31. Port Connectivity Checks: "cpu:CPU|multiplexador2:mux_ULA"
- 32. Port Connectivity Checks: "cpu:CPU|rom:ROM"
- 33. Port Connectivity Checks: "cpu:CPU|endereco:endereco"
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
- 37. Analysis & Synthesis Suppressed Messages
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0|altsyncram_8j61:auto_generated
+ 15. Parameter Settings for User Entity Instance: divisor_frequencia:div_freq
+ 16. Parameter Settings for User Entity Instance: cpu:CPU|endereco:endereco
+ 17. Parameter Settings for User Entity Instance: cpu:CPU|rom:ROM
+ 18. Parameter Settings for User Entity Instance: cpu:CPU|ram:RAM
+ 19. Parameter Settings for Inferred Entity Instance: cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0
+ 20. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div3
+ 21. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod4
+ 22. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div2
+ 23. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod3
+ 24. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div1
+ 25. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod2
+ 26. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Div0
+ 27. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod1
+ 28. Parameter Settings for Inferred Entity Instance: modulosaida:ModuloSaida|lpm_divide:Mod0
+ 29. Parameter Settings for Inferred Entity Instance: cpu:CPU|ula:ULA|lpm_divide:Div0
+ 30. Parameter Settings for Inferred Entity Instance: cpu:CPU|ula:ULA|lpm_mult:Mult0
+ 31. altsyncram Parameter Settings by Entity Instance
+ 32. lpm_mult Parameter Settings by Entity Instance
+ 33. Port Connectivity Checks: "modulosaida:ModuloSaida"
+ 34. Port Connectivity Checks: "cpu:CPU|multiplexador4:mux_BR_escrita"
+ 35. Port Connectivity Checks: "cpu:CPU|multiplexador2:mux_ULA"
+ 36. Port Connectivity Checks: "cpu:CPU|ram:RAM"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
+ 40. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -68,19 +71,19 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 01 17:14:20 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jul 14 20:47:07 2024       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; sistema                                     ;
 ; Top-level Entity Name              ; sistema                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12,512                                      ;
-;     Total combinational functions  ; 8,540                                       ;
-;     Dedicated logic registers      ; 4,142                                       ;
-; Total registers                    ; 4142                                        ;
+; Total logic elements               ; 17,230                                      ;
+;     Total combinational functions  ; 11,178                                      ;
+;     Dedicated logic registers      ; 6,190                                       ;
+; Total registers                    ; 6190                                        ;
 ; Total pins                         ; 59                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 16,384                                      ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 6                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
@@ -189,9 +192,9 @@ refer to the applicable agreement for further details.
 ;     Processor 4            ;   0.1%      ;
 ;     Processor 5            ;   0.1%      ;
 ;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -244,6 +247,15 @@ refer to the applicable agreement for further details.
 ; db/sign_div_unsign_rlh.tdf           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/sign_div_unsign_rlh.tdf           ;         ;
 ; db/alt_u_div_a7f.tdf                 ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/alt_u_div_a7f.tdf                 ;         ;
 ; db/lpm_divide_0jm.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/lpm_divide_0jm.tdf                ;         ;
+; db/lpm_divide_hkm.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/lpm_divide_hkm.tdf                ;         ;
+; db/sign_div_unsign_9nh.tdf           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/sign_div_unsign_9nh.tdf           ;         ;
+; db/alt_u_div_6af.tdf                 ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/alt_u_div_6af.tdf                 ;         ;
+; lpm_mult.tdf                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf                             ;         ;
+; lpm_add_sub.inc                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                          ;         ;
+; multcore.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.inc                             ;         ;
+; bypassff.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc                             ;         ;
+; altshift.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc                             ;         ;
+; db/mult_7dt.tdf                      ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/mult_7dt.tdf                      ;         ;
 +--------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
@@ -252,100 +264,108 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 12,512    ;
+; Estimated Total logic elements              ; 17,230    ;
 ;                                             ;           ;
-; Total combinational functions               ; 8540      ;
+; Total combinational functions               ; 11178     ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 5651      ;
-;     -- 3 input functions                    ; 1242      ;
-;     -- <=2 input functions                  ; 1647      ;
+;     -- 4 input functions                    ; 7351      ;
+;     -- 3 input functions                    ; 2040      ;
+;     -- <=2 input functions                  ; 1787      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 7475      ;
-;     -- arithmetic mode                      ; 1065      ;
+;     -- normal mode                          ; 9531      ;
+;     -- arithmetic mode                      ; 1647      ;
 ;                                             ;           ;
-; Total registers                             ; 4142      ;
-;     -- Dedicated logic registers            ; 4142      ;
+; Total registers                             ; 6190      ;
+;     -- Dedicated logic registers            ; 6190      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 59        ;
 ; Total memory bits                           ; 16384     ;
 ;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
+; Embedded Multiplier 9-bit elements          ; 6         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clock_uso ;
-; Maximum fan-out                             ; 4138      ;
-; Total fan-out                               ; 42029     ;
-; Average fan-out                             ; 3.27      ;
+; Maximum fan-out                             ; 6186      ;
+; Total fan-out                               ; 57690     ;
+; Average fan-out                             ; 3.29      ;
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                             ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                              ; Entity Name         ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |sistema                                     ; 8540 (16)           ; 4142 (0)                  ; 16384       ; 0            ; 0       ; 0         ; 59   ; 0            ; |sistema                                                                                                                         ; sistema             ; work         ;
-;    |cpu:CPU|                                 ; 5115 (6)            ; 4106 (0)                  ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU                                                                                                                 ; cpu                 ; work         ;
-;       |banco_registrador:banco_registrador|  ; 2829 (2829)         ; 2049 (2049)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|banco_registrador:banco_registrador                                                                             ; banco_registrador   ; work         ;
-;       |endereco:endereco|                    ; 57 (57)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|endereco:endereco                                                                                               ; endereco            ; work         ;
-;       |multiplexador2:mux_ULA|               ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|multiplexador2:mux_ULA                                                                                          ; multiplexador2      ; work         ;
-;       |multiplexador4:mux_BR_escrita|        ; 79 (79)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita                                                                                   ; multiplexador4      ; work         ;
-;       |ram:RAM|                              ; 1424 (1424)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ram:RAM                                                                                                         ; ram                 ; work         ;
-;       |rom:ROM|                              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM                                                                                                         ; rom                 ; work         ;
-;          |altsyncram:ROM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0                                                                                    ; altsyncram          ; work         ;
-;             |altsyncram_8j61:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0|altsyncram_8j61:auto_generated                                                     ; altsyncram_8j61     ; work         ;
-;       |ula:ULA|                              ; 649 (632)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA                                                                                                         ; ula                 ; work         ;
-;          |ulacontrol:ULAControl|             ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|ulacontrol:ULAControl                                                                                   ; ulacontrol          ; work         ;
-;       |unidade_controle:unidade_controle|    ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|unidade_controle:unidade_controle                                                                               ; unidade_controle    ; work         ;
-;    |debounce:DeBounce|                       ; 1 (1)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce                                                                                                       ; debounce            ; work         ;
-;       |my_dff:d0|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d0                                                                                             ; my_dff              ; work         ;
-;       |my_dff:d1|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d1                                                                                             ; my_dff              ; work         ;
-;       |my_dff:d2|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d2                                                                                             ; my_dff              ; work         ;
-;    |divisor_frequencia:div_freq|             ; 45 (45)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|divisor_frequencia:div_freq                                                                                             ; divisor_frequencia  ; work         ;
-;    |modulosaida:ModuloSaida|                 ; 3363 (44)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida                                                                                                 ; modulosaida         ; work         ;
-;       |displayss:display1|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display1                                                                              ; displayss           ; work         ;
-;       |displayss:display2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display2                                                                              ; displayss           ; work         ;
-;       |displayss:display3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display3                                                                              ; displayss           ; work         ;
-;       |displayss:display4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display4                                                                              ; displayss           ; work         ;
-;       |displayss:display5|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display5                                                                              ; displayss           ; work         ;
-;       |lpm_divide:Div0|                      ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_0jm:auto_generated|     ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated                                                   ; lpm_divide_0jm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 341 (341)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-;       |lpm_divide:Div1|                      ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3jm:auto_generated|     ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated                                                   ; lpm_divide_3jm      ; work         ;
-;             |sign_div_unsign_rlh:divider|    ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
-;                |alt_u_div_a7f:divider|       ; 486 (486)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_a7f:divider ; alt_u_div_a7f       ; work         ;
-;       |lpm_divide:Div2|                      ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_dkm:auto_generated|     ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated                                                   ; lpm_divide_dkm      ; work         ;
-;             |sign_div_unsign_5nh:divider|    ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh ; work         ;
-;                |alt_u_div_u9f:divider|       ; 574 (574)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider ; alt_u_div_u9f       ; work         ;
-;       |lpm_divide:Div3|                      ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_ikm:auto_generated|     ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated                                                   ; lpm_divide_ikm      ; work         ;
-;             |sign_div_unsign_anh:divider|    ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh ; work         ;
-;                |alt_u_div_7af:divider|       ; 607 (607)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_7af:divider ; alt_u_div_7af       ; work         ;
-;       |lpm_divide:Mod0|                      ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3bm:auto_generated|     ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated                                                   ; lpm_divide_3bm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-;       |lpm_divide:Mod1|                      ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3bm:auto_generated|     ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated                                                   ; lpm_divide_3bm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 300 (300)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-;       |lpm_divide:Mod2|                      ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3bm:auto_generated|     ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated                                                   ; lpm_divide_3bm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 258 (258)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-;       |lpm_divide:Mod3|                      ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3bm:auto_generated|     ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated                                                   ; lpm_divide_3bm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 216 (216)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-;       |lpm_divide:Mod4|                      ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_3bm:auto_generated|     ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated                                                   ; lpm_divide_3bm      ; work         ;
-;             |sign_div_unsign_olh:divider|    ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
-;                |alt_u_div_47f:divider|       ; 160 (160)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; alt_u_div_47f       ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                           ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Entity Name         ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |sistema                                     ; 11178 (19)          ; 6190 (0)                  ; 16384       ; 6            ; 0       ; 3         ; 59   ; 0            ; |sistema                                                                                                                                       ; sistema             ; work         ;
+;    |cpu:CPU|                                 ; 7747 (6)            ; 6154 (0)                  ; 16384       ; 6            ; 0       ; 3         ; 0    ; 0            ; |sistema|cpu:CPU                                                                                                                               ; cpu                 ; work         ;
+;       |banco_registrador:banco_registrador|  ; 2793 (2793)         ; 2049 (2049)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|banco_registrador:banco_registrador                                                                                           ; banco_registrador   ; work         ;
+;       |endereco:endereco|                    ; 42 (42)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|endereco:endereco                                                                                                             ; endereco            ; work         ;
+;       |multiplexador2:mux_ULA|               ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|multiplexador2:mux_ULA                                                                                                        ; multiplexador2      ; work         ;
+;       |multiplexador4:mux_BR_escrita|        ; 107 (107)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita                                                                                                 ; multiplexador4      ; work         ;
+;       |ram:RAM|                              ; 2858 (2858)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ram:RAM                                                                                                                       ; ram                 ; work         ;
+;       |rom:ROM|                              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM                                                                                                                       ; rom                 ; work         ;
+;          |altsyncram:ROM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0                                                                                                  ; altsyncram          ; work         ;
+;             |altsyncram_8j61:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0|altsyncram_8j61:auto_generated                                                                   ; altsyncram_8j61     ; work         ;
+;       |ula:ULA|                              ; 1869 (701)          ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA                                                                                                                       ; ula                 ; work         ;
+;          |lpm_divide:Div0|                   ; 1119 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_hkm:auto_generated|  ; 1119 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0|lpm_divide_hkm:auto_generated                                                                         ; lpm_divide_hkm      ; work         ;
+;                |sign_div_unsign_9nh:divider| ; 1119 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;                   |alt_u_div_6af:divider|    ; 1119 (1117)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider                       ; alt_u_div_6af       ; work         ;
+;                      |add_sub_7pc:add_sub_0| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_7pc:add_sub_0 ; add_sub_7pc         ; work         ;
+;                      |add_sub_8pc:add_sub_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc         ; work         ;
+;          |lpm_mult:Mult0|                    ; 28 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_mult:Mult0                                                                                                        ; lpm_mult            ; work         ;
+;             |mult_7dt:auto_generated|        ; 28 (28)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|lpm_mult:Mult0|mult_7dt:auto_generated                                                                                ; mult_7dt            ; work         ;
+;          |ulacontrol:ULAControl|             ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|ula:ULA|ulacontrol:ULAControl                                                                                                 ; ulacontrol          ; work         ;
+;       |unidade_controle:unidade_controle|    ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|cpu:CPU|unidade_controle:unidade_controle                                                                                             ; unidade_controle    ; work         ;
+;    |debounce:DeBounce|                       ; 0 (0)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce                                                                                                                     ; debounce            ; work         ;
+;       |my_dff:d0|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d0                                                                                                           ; my_dff              ; work         ;
+;       |my_dff:d1|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d1                                                                                                           ; my_dff              ; work         ;
+;       |my_dff:d2|                            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|debounce:DeBounce|my_dff:d2                                                                                                           ; my_dff              ; work         ;
+;    |divisor_frequencia:div_freq|             ; 49 (49)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|divisor_frequencia:div_freq                                                                                                           ; divisor_frequencia  ; work         ;
+;    |modulosaida:ModuloSaida|                 ; 3363 (44)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida                                                                                                               ; modulosaida         ; work         ;
+;       |displayss:display1|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display1                                                                                            ; displayss           ; work         ;
+;       |displayss:display2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display2                                                                                            ; displayss           ; work         ;
+;       |displayss:display3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display3                                                                                            ; displayss           ; work         ;
+;       |displayss:display4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display4                                                                                            ; displayss           ; work         ;
+;       |displayss:display5|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|displayss:display5                                                                                            ; displayss           ; work         ;
+;       |lpm_divide:Div0|                      ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_0jm:auto_generated|     ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated                                                                 ; lpm_divide_0jm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 341 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 341 (341)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div0|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
+;       |lpm_divide:Div1|                      ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3jm:auto_generated|     ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated                                                                 ; lpm_divide_3jm      ; work         ;
+;             |sign_div_unsign_rlh:divider|    ; 486 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated|sign_div_unsign_rlh:divider                                     ; sign_div_unsign_rlh ; work         ;
+;                |alt_u_div_a7f:divider|       ; 486 (486)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div1|lpm_divide_3jm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_a7f:divider               ; alt_u_div_a7f       ; work         ;
+;       |lpm_divide:Div2|                      ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_dkm:auto_generated|     ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated                                                                 ; lpm_divide_dkm      ; work         ;
+;             |sign_div_unsign_5nh:divider|    ; 574 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated|sign_div_unsign_5nh:divider                                     ; sign_div_unsign_5nh ; work         ;
+;                |alt_u_div_u9f:divider|       ; 574 (574)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div2|lpm_divide_dkm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_u9f:divider               ; alt_u_div_u9f       ; work         ;
+;       |lpm_divide:Div3|                      ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_ikm:auto_generated|     ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated                                                                 ; lpm_divide_ikm      ; work         ;
+;             |sign_div_unsign_anh:divider|    ; 607 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                                     ; sign_div_unsign_anh ; work         ;
+;                |alt_u_div_7af:divider|       ; 607 (607)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_7af:divider               ; alt_u_div_7af       ; work         ;
+;       |lpm_divide:Mod0|                      ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3bm:auto_generated|     ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated                                                                 ; lpm_divide_3bm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 342 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
+;       |lpm_divide:Mod1|                      ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3bm:auto_generated|     ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated                                                                 ; lpm_divide_3bm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 300 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 300 (300)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod1|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
+;       |lpm_divide:Mod2|                      ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3bm:auto_generated|     ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated                                                                 ; lpm_divide_3bm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 258 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 258 (258)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod2|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
+;       |lpm_divide:Mod3|                      ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3bm:auto_generated|     ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated                                                                 ; lpm_divide_3bm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 216 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 216 (216)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod3|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
+;       |lpm_divide:Mod4|                      ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_3bm:auto_generated|     ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated                                                                 ; lpm_divide_3bm      ; work         ;
+;             |sign_div_unsign_olh:divider|    ; 160 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                                     ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_47f:divider|       ; 160 (160)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistema|modulosaida:ModuloSaida|lpm_divide:Mod4|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider               ; alt_u_div_47f       ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -358,17 +378,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------+
 
 
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 3           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 6           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 3           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4142  ;
+; Total registers                              ; 6190  ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4096  ;
+; Number of registers using Clock Enable       ; 6144  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -378,7 +416,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------+---------+
 ; Inverted Register                                         ; Fan out ;
 +-----------------------------------------------------------+---------+
-; cpu:CPU|banco_registrador:banco_registrador|primeiroClock ; 2       ;
+; cpu:CPU|banco_registrador:banco_registrador|primeiroClock ; 1       ;
 ; Total number of inverted registers = 1                    ;         ;
 +-----------------------------------------------------------+---------+
 
@@ -397,26 +435,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |sistema|cpu:CPU|banco_registrador:banco_registrador|registradores[1][16] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |sistema|cpu:CPU|banco_registrador:banco_registrador|registradores[0][24] ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; Yes        ; |sistema|cpu:CPU|endereco:endereco|cp[8]                                  ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[27]                      ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[7]                       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[1]                       ;
-; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita|mux5_out[23]               ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita|mux5_out[12]               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |sistema|cpu:CPU|banco_registrador:banco_registrador|registradores[0][21] ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; Yes        ; |sistema|cpu:CPU|endereco:endereco|cp[6]                                  ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[19]                      ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[4]                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador2:mux_ULA|mux3_out[0]                       ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita|mux5_out[31]               ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita|mux5_out[10]               ;
 ; 5:1                ; 9 bits    ; 27 LEs        ; 27 LEs               ; 0 LEs                  ; No         ; |sistema|cpu:CPU|multiplexador4:mux_BR_escrita|mux5_out[2]                ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |sistema|cpu:CPU|ula:ULA|ulacontrol:ULAControl|Mux0                       ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |sistema|cpu:CPU|banco_registrador:banco_registrador|Mux43                ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |sistema|cpu:CPU|banco_registrador:banco_registrador|Mux18                ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux15                                            ;
-; 21:1               ; 6 bits    ; 84 LEs        ; 48 LEs               ; 36 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux12                                            ;
-; 21:1               ; 8 bits    ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux22                                            ;
-; 22:1               ; 4 bits    ; 56 LEs        ; 36 LEs               ; 20 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux7                                             ;
-; 22:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux24                                            ;
-; 23:1               ; 2 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux3                                             ;
-; 23:1               ; 2 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux29                                            ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux1                                             ;
+; 16:1               ; 5 bits    ; 50 LEs        ; 40 LEs               ; 10 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|ulacontrol:ULAControl|Mux0                       ;
+; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |sistema|cpu:CPU|banco_registrador:banco_registrador|Mux57                ;
+; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |sistema|cpu:CPU|banco_registrador:banco_registrador|Mux0                 ;
+; 37:1               ; 2 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux15                                            ;
+; 37:1               ; 6 bits    ; 144 LEs       ; 60 LEs               ; 84 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux8                                             ;
+; 37:1               ; 8 bits    ; 192 LEs       ; 64 LEs               ; 128 LEs                ; No         ; |sistema|cpu:CPU|ula:ULA|Mux19                                            ;
+; 38:1               ; 4 bits    ; 100 LEs       ; 40 LEs               ; 60 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux4                                             ;
+; 38:1               ; 4 bits    ; 100 LEs       ; 40 LEs               ; 60 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux27                                            ;
+; 39:1               ; 2 bits    ; 52 LEs        ; 20 LEs               ; 32 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux2                                             ;
+; 39:1               ; 2 bits    ; 52 LEs        ; 20 LEs               ; 32 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux28                                            ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 24 LEs               ; 28 LEs                 ; No         ; |sistema|cpu:CPU|ula:ULA|Mux0                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 
 
@@ -431,11 +468,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +--------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: divisor_frequencia:div_freq ;
-+--------------------+----------+------------------------------------------+
-; Parameter Name     ; Value    ; Type                                     ;
-+--------------------+----------+------------------------------------------+
-; clock_slow_counter ; 25000000 ; Signed Integer                           ;
-+--------------------+----------+------------------------------------------+
++--------------------+---------+-------------------------------------------+
+; Parameter Name     ; Value   ; Type                                      ;
++--------------------+---------+-------------------------------------------+
+; clock_slow_counter ; 2500000 ; Signed Integer                            ;
++--------------------+---------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -460,14 +497,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cpu:CPU|ram:RAM ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; DATA_WIDTH     ; 32    ; Signed Integer                      ;
-; ADDR_WIDTH     ; 6     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|ram:RAM        ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH     ; 32                               ; Signed Integer  ;
+; ADDR_WIDTH     ; 00000000000000000000000000000111 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -740,6 +777,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cpu:CPU|ula:ULA|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                ;
+; LPM_WIDTHD             ; 32             ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_hkm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: cpu:CPU|ula:ULA|lpm_mult:Mult0     ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 32           ; Untyped             ;
+; LPM_WIDTHB                                     ; 32           ; Untyped             ;
+; LPM_WIDTHP                                     ; 64           ; Untyped             ;
+; LPM_WIDTHR                                     ; 64           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_7dt     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                 ;
 +-------------------------------------------+--------------------------------------+
 ; Name                                      ; Value                                ;
@@ -759,6 +854,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------+
 
 
++------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                         ;
++---------------------------------------+--------------------------------+
+; Name                                  ; Value                          ;
++---------------------------------------+--------------------------------+
+; Number of entity instances            ; 1                              ;
+; Entity Instance                       ; cpu:CPU|ula:ULA|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 32                             ;
+;     -- LPM_WIDTHB                     ; 32                             ;
+;     -- LPM_WIDTHP                     ; 64                             ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                       ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
++---------------------------------------+--------------------------------+
+
+
 +-----------------------------------------------------+
 ; Port Connectivity Checks: "modulosaida:ModuloSaida" ;
 +-----------------+-------+----------+----------------+
@@ -773,8 +888,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; D_in         ; Input ; Warning  ; Input port expression (35 bits) is wider than the input port (32 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; D_in[31..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; D_in         ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; D_in[31..9]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
 ; E_in[31..18] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
 +--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -789,22 +904,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+--------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cpu:CPU|rom:ROM"                                                                                                                                                                 ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                           ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; addr ; Input ; Warning  ; Input port expression (10 bits) is wider than the input port (9 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cpu:CPU|endereco:endereco"                                                                                                                                                      ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; end_instrucao ; Output ; Warning  ; Output or bidir port (9 bits) is smaller than the port expression (10 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cpu:CPU|ram:RAM"                                                                                                                                                                      ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; read_addr  ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (7 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; write_addr ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (7 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -813,25 +920,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 59                          ;
-; cycloneiii_ff         ; 4142                        ;
-;     ENA               ; 4096                        ;
+; cycloneiii_ff         ; 6190                        ;
+;     ENA               ; 6144                        ;
 ;     SCLR              ; 32                          ;
 ;     plain             ; 14                          ;
-; cycloneiii_lcell_comb ; 8551                        ;
-;     arith             ; 1065                        ;
+; cycloneiii_lcell_comb ; 11189                       ;
+;     arith             ; 1647                        ;
 ;         1 data inputs ; 9                           ;
 ;         2 data inputs ; 79                          ;
-;         3 data inputs ; 977                         ;
-;     normal            ; 7486                        ;
-;         0 data inputs ; 175                         ;
+;         3 data inputs ; 1559                        ;
+;     normal            ; 9542                        ;
+;         0 data inputs ; 205                         ;
 ;         1 data inputs ; 82                          ;
-;         2 data inputs ; 1313                        ;
-;         3 data inputs ; 265                         ;
-;         4 data inputs ; 5651                        ;
+;         2 data inputs ; 1423                        ;
+;         3 data inputs ; 481                         ;
+;         4 data inputs ; 7351                        ;
+; cycloneiii_mac_mult   ; 3                           ;
+; cycloneiii_mac_out    ; 3                           ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 72.00                       ;
-; Average LUT depth     ; 38.35                       ;
+; Max LUT depth         ; 142.10                      ;
+; Average LUT depth     ; 81.30                       ;
 +-----------------------+-----------------------------+
 
 
@@ -840,7 +949,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:45     ;
+; Top            ; 00:00:54     ;
 +----------------+--------------+
 
 
@@ -850,7 +959,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jul 01 17:13:18 2024
+    Info: Processing started: Sun Jul 14 20:45:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sistema -c sistema
 Info (16303): Aggressive Area optimization mode selected -- logic area will be prioritized at the potential cost of reduced timing performance
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -858,18 +967,18 @@ Info (20030): Parallel compilation is enabled and will use 16 of the 16 processo
 Warning (12125): Using design file sistema.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sistema File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 1
 Info (12127): Elaborating entity "sistema" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at sistema.v(36): truncated value with size 33 to match size of target (32) File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 36
+Warning (10230): Verilog HDL assignment warning at sistema.v(42): truncated value with size 33 to match size of target (32) File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 42
 Warning (12125): Using design file divisor_frequencia.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: divisor_frequencia File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/divisor_frequencia.v Line: 1
-Info (12128): Elaborating entity "divisor_frequencia" for hierarchy "divisor_frequencia:div_freq" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 30
+Info (12128): Elaborating entity "divisor_frequencia" for hierarchy "divisor_frequencia:div_freq" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 33
 Warning (12125): Using design file debounce.v, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
     Info (12023): Found entity 1: debounce File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/debounce.v Line: 1
     Info (12023): Found entity 2: my_dff File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/debounce.v Line: 21
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:DeBounce" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 34
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:DeBounce" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 40
 Info (12128): Elaborating entity "my_dff" for hierarchy "debounce:DeBounce|my_dff:d0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/debounce.v Line: 9
 Warning (12125): Using design file cpu.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: cpu File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 1
-Info (12128): Elaborating entity "cpu" for hierarchy "cpu:CPU" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 45
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:CPU" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 55
 Warning (12125): Using design file endereco.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: endereco File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/endereco.v Line: 1
 Info (12128): Elaborating entity "endereco" for hierarchy "cpu:CPU|endereco:endereco" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 62
@@ -893,21 +1002,19 @@ Warning (12125): Using design file ulacontrol.v, which is not specified as a des
 Info (12128): Elaborating entity "ulacontrol" for hierarchy "cpu:CPU|ula:ULA|ulacontrol:ULAControl" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 17
 Warning (12125): Using design file ram.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ram File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ram.v Line: 1
-Info (12128): Elaborating entity "ram" for hierarchy "cpu:CPU|ram:RAM" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 131
+Info (12128): Elaborating entity "ram" for hierarchy "cpu:CPU|ram:RAM" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 135
 Warning (12125): Using design file multiplexador2.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: multiplexador2 File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/multiplexador2.v Line: 1
-Info (12128): Elaborating entity "multiplexador2" for hierarchy "cpu:CPU|multiplexador2:mux_ULA" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 144
+Info (12128): Elaborating entity "multiplexador2" for hierarchy "cpu:CPU|multiplexador2:mux_ULA" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 148
 Warning (12125): Using design file multiplexador4.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: multiplexador4 File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/multiplexador4.v Line: 1
-Info (12128): Elaborating entity "multiplexador4" for hierarchy "cpu:CPU|multiplexador4:mux_BR_escrita" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 158
+Info (12128): Elaborating entity "multiplexador4" for hierarchy "cpu:CPU|multiplexador4:mux_BR_escrita" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 162
 Warning (12125): Using design file modulosaida.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: modulosaida File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 1
-Info (12128): Elaborating entity "modulosaida" for hierarchy "modulosaida:ModuloSaida" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 63
+Info (12128): Elaborating entity "modulosaida" for hierarchy "modulosaida:ModuloSaida" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/sistema.v Line: 65
 Warning (12125): Using design file displayss.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: displayss File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/displayss.v Line: 1
 Info (12128): Elaborating entity "displayss" for hierarchy "modulosaida:ModuloSaida|displayss:display1" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 17
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "cpu:CPU|cp[9]" is missing source, defaulting to GND File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/cpu.v Line: 23
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "cpu:CPU|ram:RAM|ram" is uninferred due to asynchronous read logic File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ram.v Line: 16
 Info (19000): Inferred 1 megafunctions from design logic
@@ -922,7 +1029,7 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/sistema.ram0_rom_e1d579b4.hdl.mif
-Info (278001): Inferred 9 megafunctions from design logic
+Info (278001): Inferred 11 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Div3" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 15
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Mod4" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 15
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Div2" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 14
@@ -932,6 +1039,8 @@ Info (278001): Inferred 9 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Div0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 12
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Mod1" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 12
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulosaida:ModuloSaida|Mod0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/modulosaida.v Line: 11
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "cpu:CPU|ula:ULA|Div0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 26
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "cpu:CPU|ula:ULA|Mult0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 25
 Info (12130): Elaborated megafunction instantiation "cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0"
 Info (12133): Instantiated megafunction "cpu:CPU|rom:ROM|altsyncram:ROM_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1014,7 +1123,38 @@ Info (12133): Instantiated megafunction "modulosaida:ModuloSaida|lpm_divide:Mod0
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12130): Elaborated megafunction instantiation "cpu:CPU|ula:ULA|lpm_divide:Div0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 26
+Info (12133): Instantiated megafunction "cpu:CPU|ula:ULA|lpm_divide:Div0" with the following parameter: File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 26
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hkm.tdf
+    Info (12023): Found entity 1: lpm_divide_hkm File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/lpm_divide_hkm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/sign_div_unsign_9nh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
+    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/alt_u_div_6af.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "cpu:CPU|ula:ULA|lpm_mult:Mult0" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 25
+Info (12133): Instantiated megafunction "cpu:CPU|ula:ULA|lpm_mult:Mult0" with the following parameter: File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/ula.v Line: 25
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "64"
+    Info (12134): Parameter "LPM_WIDTHR" = "64"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_7dt.tdf
+    Info (12023): Found entity 1: mult_7dt File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/mult_7dt.tdf Line: 30
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following DSP element node(s):
+        Warning (14320): Synthesized away node "cpu:CPU|ula:ULA|lpm_mult:Mult0|mult_7dt:auto_generated|mac_mult7" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/mult_7dt.tdf Line: 66
+        Warning (14320): Synthesized away node "cpu:CPU|ula:ULA|lpm_mult:Mult0|mult_7dt:auto_generated|mac_out8" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/mult_7dt.tdf Line: 90
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 84 buffer(s)
+    Info (13019): Ignored 84 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "modulosaida:ModuloSaida|lpm_divide:Div3|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_7af:divider|add_sub_17_result_int[3]~24" File: C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/db/alt_u_div_7af.tdf Line: 71
@@ -1095,16 +1235,17 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file C:/Users/lucas/Documents/GitHub/projeto_computador/sistema/output_files/sistema.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 12673 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 17397 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 12582 logic cells
+    Info (21061): Implemented 17300 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4940 megabytes
-    Info: Processing ended: Mon Jul 01 17:14:20 2024
-    Info: Elapsed time: 00:01:02
-    Info: Total CPU time (on all processors): 00:00:32
+    Info (21062): Implemented 6 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4962 megabytes
+    Info: Processing ended: Sun Jul 14 20:47:08 2024
+    Info: Elapsed time: 00:01:14
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +------------------------------------------+

@@ -3,10 +3,10 @@ module cpu
 	input clock,
 	input [17:0] switches,
 	output [27:0] display,
-	output wire OpIn, OpOut, OpHalt, Jal
+	output wire OpIn, OpOut, OpHalt, Jal, Jr
 );
 
-	localparam ADDR_WIDTH = 4'd9;	
+	localparam ADDR_WIDTH = 4'd9;
 	
 	wire[31:0] shamt_out;
 	wire[31:0] ime_end_out;
@@ -16,11 +16,11 @@ module cpu
 	wire[31:0] leitura1;
 	wire[31:0] leitura2;
 	
-	wire Jr, Jump, Branch, BranchNE, MemparaReg, EscreveMem; 
+	wire Jump, Branch, BranchNE, MemparaReg, EscreveMem; 
 	wire OrigULA, EscreveReg, OpShamt, OpMov, RegLei2;
 	wire[3:0] OpULA;
 	
-	wire[ADDR_WIDTH:0] cp;
+	wire[ADDR_WIDTH-1:0] cp;
 	wire zero;
 	
 	wire[5:0] mux2_reg; // qual endereco ira para o banco de registrador
@@ -120,11 +120,15 @@ module cpu
 	);
 			  
 	// memoria de dados
-	ram RAM
+	ram
+	#(
+		.ADDR_WIDTH(ADDR_WIDTH-2)
+	)
+	RAM
 	(
 		.data(leitura2), 
-		.read_addr(ULA_out[5:0]), 
-		.write_addr(ULA_out[5:0]), 
+		.read_addr(ULA_out[ADDR_WIDTH-1:0]), 
+		.write_addr(ULA_out[ADDR_WIDTH-1:0]), 
 		.we(EscreveMem), 
 		.write_clock(clock), 
 		.ram_out(RAM_out)
@@ -148,7 +152,7 @@ module cpu
 		.A_in(ULA_out), 
 		.B_in(RAM_out), 
 		.C_in(leitura1),
-		.D_in({25'b0, cp}),
+		.D_in({24'b0, cp}),
 		.E_in(switches_out),
 		.Sel_1(MemparaReg), 
 		.Sel_2(OpMov),

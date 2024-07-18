@@ -207,7 +207,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -238,7 +238,7 @@ module unidade_controle
 				OpHalt<=1'b0;
 			end
 			
-			6'b001001: begin //beq
+			6'b001001: begin // beq
 				Jal<=1'b0;
 				Jr<=1'b0;
 				Jump<=1'b0;
@@ -276,7 +276,7 @@ module unidade_controle
 				OpHalt<=1'b0;
 			end
 			
-			6'b001011: begin //slti
+			6'b001011: begin // slti
 				Jal<=1'b0;
 				Jr<=1'b0;
 				Jump<=1'b0;
@@ -302,7 +302,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -321,7 +321,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -340,7 +340,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -359,7 +359,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -378,7 +378,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0111;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -397,7 +397,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -416,7 +416,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -435,7 +435,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0111;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;

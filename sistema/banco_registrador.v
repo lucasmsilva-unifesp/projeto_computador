@@ -18,7 +18,6 @@ module banco_registrador
 		if (primeiroClock)
 		begin
 			registradores[0] = 0;
-			registradores[1] = 13249;
 			// kit fpga de2-115 tem 126MB de SDRAM,
 			// deixei 20MB para os programas,
 			// sobrando 106MB para as memórias

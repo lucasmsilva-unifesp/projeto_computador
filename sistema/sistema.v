@@ -11,7 +11,7 @@ module sistema
 	output [3:0] LEDG
 );
 	
-	wire OpIn, OpOut, OpHalt, Jal; // Operacoes
+	wire OpIn, OpOut, OpHalt, Jal, Jr; // Operacoes
 	wire sel_clock, clock_uso, clock_slow; // selecao de clock, clock de destino, clock com divisor de frequencia
 	
 	wire button_deBounce;
@@ -20,7 +20,7 @@ module sistema
 	wire [27:0] dados;
 	
 	assign LEDG[0] = (OpIn | Jal);
-	assign LEDG[1] = OpOut;
+	assign LEDG[1] = (OpOut | Jr);
 	assign LEDG[2] = OpHalt;
 	assign LEDG[3] = clock_slow;
 	
@@ -50,7 +50,8 @@ module sistema
 		.OpIn(OpIn), 
 		.OpOut(OpOut), 
 		.OpHalt(OpHalt),
-		.Jal(Jal)
+		.Jal(Jal),
+		.Jr(Jr)
 	);
 	
 	modulosaida ModuloSaida
