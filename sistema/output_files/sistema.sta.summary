@@ -3,19 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'divisor_frequencia:div_freq|slow_clk'
-Slack : -40.999
-TNS   : -71937.866
+Slack : -42.313
+TNS   : -77693.433
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -3.930
-TNS   : -123.990
+Slack : -4.650
+TNS   : -149.304
 
 Type  : Slow 1200mV 85C Model Hold 'divisor_frequencia:div_freq|slow_clk'
-Slack : 0.366
+Slack : 0.386
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.634
+Slack : 0.625
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
@@ -27,19 +27,19 @@ Slack : -2.693
 TNS   : -2669.929
 
 Type  : Slow 1200mV 0C Model Setup 'divisor_frequencia:div_freq|slow_clk'
-Slack : -37.873
-TNS   : -66355.985
+Slack : -39.060
+TNS   : -71554.363
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -3.536
-TNS   : -111.261
+Slack : -4.201
+TNS   : -134.688
 
 Type  : Slow 1200mV 0C Model Hold 'divisor_frequencia:div_freq|slow_clk'
-Slack : 0.362
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.580
+Slack : 0.578
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
@@ -48,30 +48,30 @@ TNS   : -45.405
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_frequencia:div_freq|slow_clk'
 Slack : -2.649
-TNS   : -2742.940
+TNS   : -2669.577
 
 Type  : Fast 1200mV 0C Model Setup 'divisor_frequencia:div_freq|slow_clk'
-Slack : -21.000
-TNS   : -36255.526
+Slack : -21.545
+TNS   : -39202.373
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -1.390
-TNS   : -42.711
+Slack : -1.685
+TNS   : -53.757
 
 Type  : Fast 1200mV 0C Model Hold 'divisor_frequencia:div_freq|slow_clk'
-Slack : 0.152
+Slack : 0.168
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.288
+Slack : 0.272
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -37.996
+TNS   : -38.045
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_frequencia:div_freq|slow_clk'
 Slack : -1.000
-TNS   : -2323.111
+TNS   : -2164.773
 
 ------------------------------------------------------------

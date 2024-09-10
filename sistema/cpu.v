@@ -35,10 +35,10 @@ module cpu
 	assign shamt_out = {29'b0, instrucao[7:6]};
 	
 	// extensao de sinal do imediato ou do endereco
-	assign ime_end_out = {17'b0, instrucao[13:0]};
+	assign ime_end_out = {18'b0, instrucao[13:0]};
 													
 	// extensao de sinal do switches
-	assign switches_out = {13'b0, switches};
+	assign switches_out = {14'b0, switches};
 	
 	// calcula o endereco da proxima instrução
 	endereco
@@ -127,8 +127,8 @@ module cpu
 	RAM
 	(
 		.data(leitura2), 
-		.read_addr(ULA_out[ADDR_WIDTH-1:0]), 
-		.write_addr(ULA_out[ADDR_WIDTH-1:0]), 
+		.read_addr(ULA_out[ADDR_WIDTH-2:0]), 
+		.write_addr(ULA_out[ADDR_WIDTH-2:0]), 
 		.we(EscreveMem), 
 		.write_clock(clock), 
 		.q(RAM_out)
@@ -152,7 +152,7 @@ module cpu
 		.A_in(ULA_out), 
 		.B_in(RAM_out), 
 		.C_in(leitura1),
-		.D_in({24'b0, cp}),
+		.D_in({23'b0, cp}),
 		.E_in(switches_out),
 		.Sel_1(MemparaReg), 
 		.Sel_2(OpMov),

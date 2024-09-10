@@ -1,6 +1,6 @@
 module divisor_frequencia
 #(
-	parameter clock_slow_counter=2500000
+	parameter clock_slow_counter=25000000
 )
 (
 	input Clk_50M, 

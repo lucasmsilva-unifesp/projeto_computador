@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Sep 09 21:57:13 2024
+Analysis & Synthesis Status : Successful - Tue Sep 10 11:14:51 2024
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : sistema
 Top-level Entity Name : sistema
 Family : Cyclone IV E
-Total logic elements : 9,174
-    Total combinational functions : 7,186
+Total logic elements : 9,149
+    Total combinational functions : 7,161
     Dedicated logic registers : 2,094
 Total registers : 2094
 Total pins : 59

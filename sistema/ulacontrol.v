@@ -7,15 +7,15 @@ module ulacontrol
 	
 	always @(*)
 		case(ULAop)
-			5'b00000: ULActl<=5'b00010; // lw, sw e addi
-			5'b00001: ULActl<=5'b00110; // beq, bnq e subi
-			5'b00011: ULActl<=5'b00000; // andi
-			5'b00100: ULActl<=5'b00001; // ori
-			5'b00101: ULActl<=5'b01000; // lui
-			5'b00110: ULActl<=5'b00111; // slti
-			5'b00111: ULActl<=5'b01110; // sla
-			5'b01000: ULActl<=5'b00011; // sra
-			5'b00010:
+			4'b0000: ULActl<=5'b00010; // lw, sw e addi
+			4'b0001: ULActl<=5'b00110; // beq, bnq e subi
+			4'b0011: ULActl<=5'b00000; // andi
+			4'b0100: ULActl<=5'b00001; // ori
+			4'b0101: ULActl<=5'b01000; // lui
+			4'b0110: ULActl<=5'b00111; // slti
+			4'b0111: ULActl<=5'b01110; // sla
+			4'b1000: ULActl<=5'b00011; // sra
+			4'b0010:
 				case (FuncCode)
 					6'b100000: ULActl<=5'b00010; //soma
 					6'b100010: ULActl<=5'b00110; //sub
