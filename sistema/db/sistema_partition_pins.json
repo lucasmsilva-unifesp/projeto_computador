@@ -160,10 +160,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[17]",
-					"strict" : false
-				},
-				{
 					"name" : "switches[16]",
 					"strict" : false
 				},
@@ -209,6 +205,10 @@
 				},
 				{
 					"name" : "switches[11]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[17]",
 					"strict" : false
 				},
 				{

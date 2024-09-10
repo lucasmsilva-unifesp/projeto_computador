@@ -22,8 +22,8 @@ module ula
 			5'b00001: ULAoutAux = A | B; // or
 			5'b00010: ULAoutAux = A + B; // add
 			5'b00011: ULAoutAux = A >> B; // srl
-			5'b00100: ULAoutAux = A * B; // mul
-			5'b00101: ULAoutAux = A / B; // div
+			//5'b00100: ULAoutAux = A * B; // mul
+			//5'b00101: ULAoutAux = A / B; // div
 			5'b00110: ULAoutAux = A - B; // sub
 			5'b00111: ULAoutAux = (A < B) ? 1 : 0; // slt
 			5'b01000: ULAoutAux = {B[13:0], 18'b0}; // lui

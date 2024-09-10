@@ -131,7 +131,7 @@ module cpu
 		.write_addr(ULA_out[ADDR_WIDTH-1:0]), 
 		.we(EscreveMem), 
 		.write_clock(clock), 
-		.ram_out(RAM_out)
+		.q(RAM_out)
 	);
 													
 	assign mux2_reg = (RegLei2) ? instrucao[25:20] : instrucao[13:8];
