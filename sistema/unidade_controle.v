@@ -207,7 +207,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -302,7 +302,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -321,7 +321,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -340,7 +340,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -359,7 +359,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -378,7 +378,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0111;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -397,7 +397,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;
@@ -416,7 +416,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0000;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b1;
@@ -435,7 +435,7 @@ module unidade_controle
 				Branch=1'b0;
 				BranchNE<=1'b0;
 				MemparaReg<=1'b0;
-				OpULA<=4'b0111;
+				OpULA<=4'b1111;
 				EscreveMem<=1'b0;
 				OrigULA<=1'b0;
 				EscreveReg<=1'b0;

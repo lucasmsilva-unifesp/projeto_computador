@@ -3,7 +3,7 @@ module cpu
 	input clock,
 	input [17:0] switches,
 	output [27:0] display,
-	output wire OpIn, OpOut, OpHalt, Jal
+	output wire OpIn, OpOut, OpHalt, Jal, Jr
 );
 
 	localparam ADDR_WIDTH = 4'd9;	
@@ -16,7 +16,7 @@ module cpu
 	wire[31:0] leitura1;
 	wire[31:0] leitura2;
 	
-	wire Jr, Jump, Branch, BranchNE, MemparaReg, EscreveMem; 
+	wire Jump, Branch, BranchNE, MemparaReg, EscreveMem; 
 	wire OrigULA, EscreveReg, OpShamt, OpMov, RegLei2;
 	wire[3:0] OpULA;
 	
@@ -35,7 +35,7 @@ module cpu
 	assign shamt_out = {29'b0, instrucao[7:6]};
 	
 	// extensao de sinal do imediato ou do endereco
-	assign ime_end_out = {17'b0, instrucao[13:0]};
+	assign ime_end_out = {18'b0, instrucao[13:0]};
 													
 	// extensao de sinal do switches
 	assign switches_out = {13'b0, switches};
@@ -120,14 +120,18 @@ module cpu
 	);
 			  
 	// memoria de dados
-	ram RAM
+	ram
+	#(
+		.ADDR_WIDTH(ADDR_WIDTH-2)
+	)
+	RAM
 	(
 		.data(leitura2), 
-		.read_addr(ULA_out[5:0]), 
-		.write_addr(ULA_out[5:0]), 
+		.read_addr(ULA_out[ADDR_WIDTH-2:0]), 
+		.write_addr(ULA_out[ADDR_WIDTH-2:0]), 
 		.we(EscreveMem), 
 		.write_clock(clock), 
-		.ram_out(RAM_out)
+		.q(RAM_out)
 	);
 													
 	assign mux2_reg = (RegLei2) ? instrucao[25:20] : instrucao[13:8];
